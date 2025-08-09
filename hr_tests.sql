@@ -1,6 +1,6 @@
- -- File: hr_plsql.sql
+ -- File: hr_tests.sql
  -- Author: Rumsha Ahmed
- -- Purpose: Backend database objects for module
+ -- Purpose: To test ther Backend database objects
 
 SET SERVEROUTPUT ON
 
@@ -99,4 +99,5 @@ COL EMAIL      FORMAT A25
 SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, JOB_ID, SALARY, HIRE_DATE
   FROM HR_EMPLOYEES
  WHERE EMAIL LIKE 'ELENOR%'
+
  ORDER BY EMPLOYEE_ID DESC;
